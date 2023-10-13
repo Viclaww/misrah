@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Centerhome = () => {
   return (
-    <div className="centerhome">
+    <div className="centerhome fade-up">
       <p> Welcome To</p>
       <h1>Misrah Arena</h1>
       <div className="line">e</div>

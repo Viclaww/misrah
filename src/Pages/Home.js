@@ -2,7 +2,7 @@ import Centerhome from "../Components/Centerhome";
 
 const Home = () => {
   return (
-    <div className="homepage">
+    <div className=" bg-no-repeat w-full homepage">
       <Centerhome />
     </div>
   );

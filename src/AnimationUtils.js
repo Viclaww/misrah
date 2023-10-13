@@ -1,14 +1,13 @@
 import gsap from "gsap";
 import { useEffect } from "react";
 
-const Centerhero = (props) => {
-  useEffect(() => {
+export default AnimationUtils () => {
+    useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.from(".centerhero", {
         y: 100,
-        duration: 1,
+        duration: 2,
         stagger: 1,
-        opacity: 0,
       });
       gsap.from(".CH-child", {
         duration: 1,
@@ -22,7 +21,4 @@ const Centerhero = (props) => {
     return () => ctx.revert();
   }, []);
 
-  return <div className="centerhero">{props.children}</div>;
-};
-
-export default Centerhero;
+}

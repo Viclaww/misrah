@@ -6,14 +6,14 @@ const Guestroom = () => {
     <div className="guestroom">
       <div className="hero">
         <Centerhero>
-          <h2>Guest Room</h2>
-          <button>Book Now</button>
+          <h2 className="CH-child">Guest Room</h2>
+          <button className="CH-child">Book Now</button>
         </Centerhero>
       </div>
       <div className="second">
         <div className="box1">
           <img alt="guestroom" src={guestroom} />
-          <div className="text">
+          <div className="text ">
             <h3>Experience Comfort and Convenient</h3>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
