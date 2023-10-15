@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Kadwa:wght@700&display=swap");
 
 /* Animation */
@@ -459,18 +459,19 @@ body {
 }
 .directorsdesk {
   background-color: #000;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0;
 }
 .directorsdesk h3 {
   color: #fff;
   display: flex;
   width: 642px;
   height: 144px;
-  margin: 40px auto;
+  margin: 20px auto;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -482,10 +483,10 @@ body {
 }
 
 .directorsdesk img {
-  width: 43 6px;
-  height: 398px;
+  width: 713px;
+  height: 520px;
   border-radius: 16px;
-  margin: 0 auto;
+  margin: 20px auto;
   flex-shrink: 0;
 }
 .guestroom .hero {

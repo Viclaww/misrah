@@ -7,7 +7,7 @@ const Navbar = () => {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.from(".navbar", {
-        y: -10,
+        y: -300,
         duration: 2,
       });
     });

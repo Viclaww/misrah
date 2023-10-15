@@ -9,7 +9,7 @@ const Centerhome = () => {
       <div className="links">
         <Link to="/guestrooms">Guest Rooms</Link>
         <Link to="/eventhall">Event Hall</Link>
-        <Link to="/workspace">Work Space</Link>
+        <Link to="/ workspace">Work Space</Link>
       </div>
     </div>
   );

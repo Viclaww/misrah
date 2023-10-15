@@ -7,7 +7,7 @@ import Eventhall from "./Pages/Eventhall";
 import Workspace from "./Pages/Workspace";
 import Guestroom from "./Pages/Guestroom";
 import About from "./Pages/About";
-
+import WorkspaceBooking from "./Pages/Workspacebooking";
 function App() {
   return (
     <>
@@ -15,7 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="eventhall" element={<Eventhall />} />
-        <Route path="workspace" element={<Workspace />} />
+        <Route path="workspace" element={<Workspace />}>
+          <Route path="booking" element={<WorkspaceBooking />} />
+        </Route>
         <Route path="guestrooms" element={<Guestroom />} />
         <Route path="about" element={<About />} />
       </Routes>

@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import Centerhero from "../Components/centerhero";
 import people from "./../asset/right_sec.jpg";
 import { Link } from "react-router-dom";
-import director from "../asset/director.jpg";
 import features from "../asset/right_sec (1).jpg";
 import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap-trial/all";
+import ClientReview from "../Components/Clientreview";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
 function Workspace() {
   ScrollTrigger.normalizeScroll(true);
 
@@ -100,7 +101,9 @@ function Workspace() {
               industry.Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </p>
-            <Link className="impact-text">Learn more</Link>
+            <Link to="booking" className="impact-text">
+              Learn more
+            </Link>
           </div>
         </div>
         <div className="box2">
@@ -123,14 +126,13 @@ function Workspace() {
               <li className="features-text">Uninterrupted Power Supply</li>
               <li className="features-text">Lorem ipsum</li>
             </ul>
-            <Link className="features-text">Book your Space Now</Link>
+            <Link to="booking" className="features-text">
+              Book your Space Now
+            </Link>
           </div>
         </div>
       </div>
-      <div className="directorsdesk">
-        <h3>From The Desk of Our Executive Director</h3>
-        <img alt="director" src={director}></img>
-      </div>
+      <ClientReview />
     </div>
   );
 }
