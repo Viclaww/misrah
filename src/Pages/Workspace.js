@@ -36,8 +36,8 @@ function Workspace() {
           opacity: 0,
           delay: 1,
           scrollTrigger: {
-            trigger: ".box1",
-            start: "top 30%",
+            trigger: ".impact-text",
+            start: "top 90%",
             scrub: 1,
             // pin: true,
             end: "+=100",
@@ -75,10 +75,10 @@ function Workspace() {
   }, []);
   return (
     <div className="workspace">
-      <div className="hero">
+      <div className="hero bg-workspace">
         <Centerhero>
-          <h2 className="CH-child">Co-Working Spaces</h2>
-          <p className="CH-child">
+          <h2 className="CH-child hero-h2">Co-Working Spaces</h2>
+          <p className="CH-child hero-p">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.Lorem Ipsum is simply dummy text of the printing and
             typesetting industry.
@@ -87,36 +87,40 @@ function Workspace() {
       </div>
 
       <div className="second">
-        <div className="box1">
+        <div className="box flex-row-reverse">
           <img
-            className="Impact-Image"
+            className="Impact-Image box-img"
             alt=" people using workspace"
             src={people}
           />
 
-          <div className="text">
-            <h3 className="impact-text">A Work Space for impact</h3>
-            <p className="impact-text">
+          <div className="text box-text">
+            <h3 className="impact-text box-h3">A Work Space for impact</h3>
+            <p className="impact-text box-p ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </p>
-            <Link to="booking" className="impact-text">
+            <Link to="booking" className="impact-text box-a">
               Learn more
             </Link>
           </div>
         </div>
-        <div className="box2">
-          <img className="features-image" alt="features" src={features} />
+        <div className="box box2 flex-row mt-[100px]">
+          <img
+            className="features-image box-img"
+            alt="features"
+            src={features}
+          />
 
-          <div className="text">
-            <h3 className="features-text">Features</h3>
-            <p className="features-text">
+          <div className="text box-text">
+            <h3 className="features-text box-h3">Features</h3>
+            <p className="features-text box-p ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </p>
-            <ul>
+            <ul className=" list-image-tick mb-0">
               <li className="features-text">
                 A comfy workspace to birth your ideas
               </li>
@@ -126,7 +130,7 @@ function Workspace() {
               <li className="features-text">Uninterrupted Power Supply</li>
               <li className="features-text">Lorem ipsum</li>
             </ul>
-            <Link to="booking" className="features-text">
+            <Link to="booking" className="features-text box-a">
               Book your Space Now
             </Link>
           </div>

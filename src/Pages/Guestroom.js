@@ -147,16 +147,18 @@ const Guestroom = () => {
 
   return (
     <div className="guestroom">
-      <div className="hero">
+      <div className="hero bg-guestroom">
         <Centerhero>
-          <h2 className="CH-child">Guest Room</h2>
-          <button className="CH-child">Book Now</button>
+          <h2 className="CH-child hero-h2">Guest Room</h2>
+          <button className="CH-child flex p-16px 22px justify-center items-center bg-d8976c border-none">
+            Book Now
+          </button>
         </Centerhero>
       </div>
       <div className="bg-[#D9D9D9] flex justify-center gap-14 items-center h-[100vh] p-10">
-        <div className="box1">
+        <div className="box flex-row-reverse">
           <img
-            className="second-img w-[562px] h-[526px]"
+            className="second-img w-[562px] h-[526px] "
             alt="guestroom"
             src={guestroom}
           />
