@@ -17,14 +17,22 @@ const Navbar = () => {
     <nav>
       <div className="navbar w-full flex justify-evenly pt-1.5 pb-1.5 ">
         <Link to="/">
-          <img alt="logo" src={logo}></img>
+          <img className="w-[45px] h-[60px]" alt="logo" src={logo}></img>
         </Link>
         <nav>
           <div className="links text-black no-underline flex gap-4 justify-evenly  pt-3.5">
-            <Link to="/eventhall">Event Hall</Link>
-            <Link to="/guestrooms">Rooms</Link>
-            <Link to="/workspace">Work Space</Link>
-            <Link to="/about">About</Link>
+            <Link className="navbar-links" to="/eventhall">
+              Event Hall
+            </Link>
+            <Link className="navbar-links" to="/guestrooms">
+              Rooms
+            </Link>
+            <Link className="navbar-links" to="/workspace">
+              Work Space
+            </Link>
+            <Link className="navbar-links" to="/about">
+              About
+            </Link>
           </div>
         </nav>
 
