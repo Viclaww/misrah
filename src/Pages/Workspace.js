@@ -5,9 +5,8 @@ import { Link } from "react-router-dom";
 import features from "../asset/right_sec (1).jpg";
 import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/all";
 import ClientReview from "../Components/Clientreview";
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 
 function Workspace() {
   ScrollTrigger.normalizeScroll(true);
@@ -22,7 +21,7 @@ function Workspace() {
         delay: 0.1,
         opacity: 0,
         scrollTrigger: {
-          trigger: ".box1",
+          trigger: ".box",
           end: "+=500",
           scrub: 1,
         },
@@ -87,14 +86,14 @@ function Workspace() {
       </div>
 
       <div className="second">
-        <div className="box flex-row-reverse">
+        <div className=" box  flex-row-reverse">
           <img
             className="Impact-Image box-img"
             alt=" people using workspace"
             src={people}
           />
 
-          <div className="text box-text">
+          <div className="text mt-24 box-text">
             <h3 className="impact-text box-h3">A Work Space for impact</h3>
             <p className="impact-text box-p ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -106,14 +105,14 @@ function Workspace() {
             </Link>
           </div>
         </div>
-        <div className="box box2 flex-row mt-[100px]">
+        <div className="box mt-[100px] box2 flex-row mt-[100px]">
           <img
             className="features-image box-img"
             alt="features"
             src={features}
           />
 
-          <div className="text box-text">
+          <div className="text mt-24 box-text">
             <h3 className="features-text box-h3">Features</h3>
             <p className="features-text box-p ">
               Lorem Ipsum is simply dummy text of the printing and typesetting

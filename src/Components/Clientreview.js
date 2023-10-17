@@ -7,10 +7,8 @@ import client6 from "../asset/Ellipse 6.png";
 import gsap from "gsap/gsap-core";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/all";
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 const ClientReview = () => {
-  ScrollTrigger.normalizeScroll(true);
   useEffect(() => {
     let ctx = gsap.context(() => {
       let tl = gsap.timeline();

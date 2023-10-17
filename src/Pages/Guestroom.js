@@ -7,11 +7,9 @@ import doubleroom from "../asset/Doubleroom.png";
 import ClientReview from "../Components/Clientreview";
 import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/all";
 import { useEffect } from "react";
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 const Guestroom = () => {
-  ScrollTrigger.normalizeScroll(true);
   useEffect(() => {
     let ctx = gsap.context(() => {
       let tl = gsap.timeline();
@@ -23,8 +21,8 @@ const Guestroom = () => {
         ease: "sine.out",
         force3D: true,
         scrollTrigger: {
-          trigger: ".box1",
-          start: "top center",
+          trigger: ".box",
+          start: "top 90%",
           toggleActions: "play none none none",
           end: "bottom bottom",
           scrub: 1,
@@ -40,8 +38,8 @@ const Guestroom = () => {
           ease: "sine.out",
           force3D: true,
           scrollTrigger: {
-            trigger: ".box1",
-            start: "top 30%",
+            trigger: ".box",
+            start: "top 90%",
             scrub: 1,
             end: "bottom bottom ",
           },
@@ -60,7 +58,7 @@ const Guestroom = () => {
           force3D: true,
           scrollTrigger: {
             trigger: ".head-text",
-            start: "top 50%",
+            start: "top 90%",
             scrub: 1,
             end: "bottom bottom ",
           },
@@ -80,7 +78,7 @@ const Guestroom = () => {
           force3D: true,
           scrollTrigger: {
             trigger: ".bestroom",
-            start: "top 50%",
+            start: "top 80%",
             scrub: 1,
             end: "bottom bottom ",
           },
@@ -98,7 +96,7 @@ const Guestroom = () => {
           force3D: true,
           scrollTrigger: {
             trigger: ".singleroom",
-            start: "top 30%",
+            start: "top 90%",
             scrub: 1,
             end: "bottom bottom ",
           },
@@ -116,7 +114,7 @@ const Guestroom = () => {
           force3D: true,
           scrollTrigger: {
             trigger: ".singleroom",
-            start: "top 30%",
+            start: "top 90%",
             scrub: 1,
             end: "bottom bottom ",
           },
@@ -150,7 +148,7 @@ const Guestroom = () => {
       <div className="hero bg-guestroom">
         <Centerhero>
           <h2 className="CH-child hero-h2">Guest Room</h2>
-          <button className="CH-child flex p-16px 22px justify-center items-center bg-d8976c border-none">
+          <button className="CH-child bg-[#D8976C] text-white  flex px-[16px] py-[15px] box-border justify-center items-center border-none">
             Book Now
           </button>
         </Centerhero>
@@ -158,18 +156,18 @@ const Guestroom = () => {
       <div className="bg-[#D9D9D9] flex justify-center gap-14 items-center h-[100vh] p-10">
         <div className="box flex-row-reverse">
           <img
-            className="second-img w-[562px] h-[526px] "
+            className="second-img box-img w-[500px] h-[456px] "
             alt="guestroom"
             src={guestroom}
           />
-          <div className="text pt-32 Expe-text ">
-            <h3>Experience Comfort and Convenient</h3>
-            <p>
+          <div className="text box-text pt-20 Expe-text ">
+            <h3 className="box-h3">Experience Comfort and Convenient</h3>
+            <p className="box-p">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </p>
-            <Link>Book Now</Link>
+            <Link className="box-a">Book Now</Link>
           </div>
         </div>
       </div>

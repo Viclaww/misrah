@@ -36,19 +36,19 @@
   @apply text-white text-center font-[Kadwa] text-[14px] font-normal font-bold leading-normal flex w-[650px] h-[106px] flex-col justify-center flex-shrink-0 m-0;
 }
 .second {
-  @apply flex py-10 flex-col;
+  @apply flex py-10 flex-col gap-24;
 }
 .box {
-  @apply flex items-start justify-center gap-9 ml-12 mt-[100px] my-auto w-[1155px];
+  @apply flex items-start px-10 justify-center gap-16 ml-12 my-auto w-[1155px];
 }
 .box-img {
   @apply flex w-[636px] h-[486px] p-3 flex-col items-start box-border gap-3;
 }
 .box-text {
-  @apply flex flex-col items-start gap-1 w-[550px] mt-24;
+  @apply flex flex-col items-start gap-1 w-[550px];
 }
 .box-h3 {
-  @apply text-black font-[Kadwa] text-[40px];
+  @apply text-black font-[Kadwa] text-[35px];
 }
 
 .box-p {
