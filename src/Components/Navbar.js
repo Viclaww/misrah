@@ -14,10 +14,10 @@ const Navbar = () => {
     return () => ctx.revert();
   }, []);
   return (
-    <nav>
-      <div className="navbar w-full flex justify-evenly pt-1.5 pb-1.5 ">
+    <>
+      <div className=" navbar w-full flex justify-evenly pt-1.5 pb-1.5 sm:hidden ">
         <Link to="/">
-          <img className="w-[45px] h-[60px]" alt="logo" src={logo}></img>
+          <img className="w-[45px] h-[60px] " alt="logo" src={logo}></img>
         </Link>
         <nav>
           <div className="links text-black no-underline flex gap-4 justify-evenly  pt-3.5">
@@ -40,7 +40,7 @@ const Navbar = () => {
           Book Now
         </button>
       </div>
-    </nav>
+    </>
   );
 };
 

@@ -17,7 +17,6 @@ function Workspace() {
       tl.from(".Impact-Image", {
         duration: 1,
         x: 100,
-        y: -100,
         delay: 0.1,
         opacity: 0,
         scrollTrigger: {
@@ -100,12 +99,12 @@ function Workspace() {
               industry.Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </p>
-            <Link to="booking" className="impact-text box-a">
+            <Link to="/workspace/booking" className="impact-text box-a">
               Learn more
             </Link>
           </div>
         </div>
-        <div className="box mt-[100px] box2 flex-row mt-[100px]">
+        <div className="box box2 flex-row mt-[100px]">
           <img
             className="features-image box-img"
             alt="features"
@@ -129,7 +128,7 @@ function Workspace() {
               <li className="features-text">Uninterrupted Power Supply</li>
               <li className="features-text">Lorem ipsum</li>
             </ul>
-            <Link to="booking" className="features-text box-a">
+            <Link to="/workspace/booking" className="features-text box-a">
               Book your Space Now
             </Link>
           </div>

@@ -113,7 +113,7 @@ const Guestroom = () => {
           ease: "sine.out",
           force3D: true,
           scrollTrigger: {
-            trigger: ".singleroom",
+            trigger: ".doubleroom",
             start: "top 90%",
             scrub: 1,
             end: "bottom bottom ",
@@ -172,18 +172,18 @@ const Guestroom = () => {
         </div>
       </div>
       <div className="px-32 w-full  text-center  py-28 flex flex-col justify-center items-center">
-        <h3 className="head-text text-4xl pb-10">Our Best Rooms</h3>
-        <p className="head-text text-sm opacity-60 mb-10 w-[500px] my-auto">
+        <h3 className="head-text text-4xl sm:text-2xl pb-10">Our Best Rooms</h3>
+        <p className="head-text text-sm sm:text-xs opacity-60 mb-10 sm:w-[300px]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.Lorem Ipsum is simply dummy text of the printing and
           typesetting industry.
         </p>
         <img
-          className="bestroom w-[856px] h-[455px] pb-10"
+          className="bestroom w-[856px] sm:w-[100%] sm:hidden h-[455px] pb-10"
           alt="Rooms"
           src={bestroom}
         ></img>
-        <div className="text-left flex flex-row justify-center items-center gap-14  w-[] ">
+        <div className="text-left flex flex-row sm:flex-col justify-center items-center gap-14  w-[] ">
           <div className="singleroom shadow-lg p-3 ">
             <Link>
               <img
@@ -205,7 +205,7 @@ const Guestroom = () => {
           <div className="doubleroom shadow-lg p-3 ">
             <Link>
               <img
-                className="w-[290px] h-[278px] "
+                className="w-[290px] sm:w-[320px] h-[278px] "
                 alt="doubleroom"
                 src={doubleroom}
               ></img>
