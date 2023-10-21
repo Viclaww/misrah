@@ -117,22 +117,22 @@ const WorkspaceBooking = () => {
           typesetting industry.
         </p>
         <img
-          className="workspace w-[856px] h-[455px] pb-10"
+          className="workspace w-[856px] h-[455px] sm:w-[550%] sm:hidden pb-10"
           alt="Rooms"
           src={Slider}
         />
       </div>
-      <div className="bg-[#AF734B] mb-20 gap-2 flex justify-around items-center w-[1160px] h-[450px] mx-auto my-0">
-        <div className="w-[370px] h-auto ">
-          <h3 className="text-3xl mb-4 booking-text">
+      <div className="bg-[#AF734B] mb-20 gap-2 sm:py-10 sm:gap-5 flex sm:flex-col justify-around items-center w-[1160px] sm:w-[100vw] sm:h-auto h-[450px] mx-auto my-0">
+        <div className="w-[370px] h-auto sm:text-center  ">
+          <h3 className="text-3xl mb-4 sm:text-xl booking-text">
             Affordable Price For Everyone
           </h3>
-          <p className="text-sm booking-text">
+          <p className="text-sm text-xs booking-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.Lorem Ipsum
           </p>
         </div>
-        <div className="basic rounded-xl bg-[#D8976C] px-10 py-16 w-[250px] h-auto gap-5 flex flex-col justify-center items-center box-border">
+        <div className="basic rounded-xl bg-[#D8976C] px-10 py-12 w-[250px] h-auto gap-5 flex flex-col justify-center items-center box-border">
           <h5 className="text-3xl">Basic</h5>
           <h6 className="text-lg">N300 Daily</h6>
           <ul className="text-sm list-image-white">
@@ -145,7 +145,7 @@ const WorkspaceBooking = () => {
             Book Now
           </Link>
         </div>
-        <div className="executive rounded-xl bg-[#D9D9D9] mx-3 px-10 py-16 w-[250px] h-auto gap-5 flex flex-col justify-center items-center box-border">
+        <div className="executive rounded-xl bg-[#D9D9D9] mx-3 px-10 py-12 w-[250px] h-auto gap-5 flex flex-col justify-center items-center box-border">
           <h5 className="text-3xl">Executive</h5>
           <h6 className="text-lg">N500 Daily</h6>
           <ul className="text-sm list-image-tick">

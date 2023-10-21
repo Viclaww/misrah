@@ -6,7 +6,6 @@ import { Route, Routes } from "react-router-dom";
 import Eventhall from "./Pages/Eventhall";
 import Workspace from "./Pages/Workspace";
 import Guestroom from "./Pages/Guestroom";
-import About from "./Pages/About";
 import WorkspaceBooking from "./Pages/Workspacebooking";
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Route path="workspace" element={<Workspace />} />
         <Route path="/workspace/booking" element={<WorkspaceBooking />} />
         <Route path="guestrooms" element={<Guestroom />} />
-        <Route path="about" element={<About />} />
       </Routes>
     </>
   );
