@@ -3,6 +3,7 @@ import Slider from "../asset/Slider.png";
 import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import Footer from "../Components/Footer";
 gsap.registerPlugin(ScrollTrigger);
 const WorkspaceBooking = () => {
   useEffect(() => {
@@ -159,6 +160,7 @@ const WorkspaceBooking = () => {
           </Link>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

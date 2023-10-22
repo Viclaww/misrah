@@ -6,6 +6,7 @@ import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import ClientReview from "../Components/Clientreview";
+import Footer from "../Components/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 const Eventhall = () => {
@@ -131,6 +132,7 @@ const Eventhall = () => {
         </div>
       </div>
       <ClientReview />
+      <Footer />
     </>
   );
 };

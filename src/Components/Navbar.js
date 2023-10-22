@@ -33,6 +33,9 @@ const Navbar = () => {
       gsap.from(".sm-navbar", {
         height: 0,
         duration: 2,
+        scrollTrigger: {
+          trigger: ".sm-navbar",
+        },
       });
     });
     return () => ctx.revert();
@@ -62,7 +65,7 @@ const Navbar = () => {
           {isOpen ? <X /> : <Menu />}{" "}
         </button>
         {isOpen && (
-          <div className="sm-navbar flex basis-full overflow-hidden bg-[#D9D9D9] absolute w-full z-10 items-center  flex-col">
+          <div className="sm-navbar flex basis-full  overflow-hidden bg-transparent text-white absolute w-full z-10 items-center  flex-col">
             <NavLinks />
           </div>
         )}

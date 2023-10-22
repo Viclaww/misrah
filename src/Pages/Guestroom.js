@@ -8,6 +8,7 @@ import ClientReview from "../Components/Clientreview";
 import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import Footer from "../Components/Footer";
 gsap.registerPlugin(ScrollTrigger);
 const Guestroom = () => {
   useEffect(() => {
@@ -222,6 +223,7 @@ const Guestroom = () => {
         </div>
       </div>
       <ClientReview />
+      <Footer />
     </div>
   );
 };

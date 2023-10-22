@@ -173,19 +173,19 @@ const ClientReview = () => {
         typesetting industry.
       </p>
 
-      <div className=" text-black flex justify-center gap-96 sm:gap-10 items-center sm:flex-col relative w-[90vw] sm:w-[100vh] h-[80vh]">
-        <div className="message bg-[#F9F5F2] px-[2.875rem] py-[3.3125rem] sm:py-[2.5rem] w-[530px] sm:w-[300px] sm:h-[200px] sm:-mt-[300px] h-[278px] ">
+      <div className=" text-black flex justify-center gap-96 sm:gap-10 items-center sm:flex-col relative w-[90vw] sm:w-full sm:h-auto h-[80vh]">
+        <div className="message bg-[#F9F5F2] px-[2.875rem] py-[3.3125rem] sm:py-[2.5rem] w-[530px] sm:w-[300px] sm:h-[200px]  h-[278px] ">
           <p className="text-child text-center sm:text-xs text-lg">
             “Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.Lorem Ipsum is simply dummy text of the printing and
             typesetting industry.”
-            <p className="text-child text-sm sm:text-xs p-2">
+            <p className="text-child font-bold text-sm sm:text-xs p-2">
               Apst. Paul Simon
             </p>
             <p className="text-child text-xs">Living Ministry Church</p>
           </p>
         </div>
-        <div className="Client-images  relative">
+        <div className="Client-images sm:hidden  relative">
           <img
             className="client1 image w-32 sm:w-16 sm:h-16 sm:hidden  h-32 top-[-10rem] right-28 absolute"
             alt="client"

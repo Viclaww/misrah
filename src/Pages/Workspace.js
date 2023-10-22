@@ -6,6 +6,7 @@ import features from "../asset/right_sec (1).jpg";
 import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ClientReview from "../Components/Clientreview";
+import Footer from "../Components/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 function Workspace() {
@@ -15,8 +16,9 @@ function Workspace() {
     let ctx = gsap.context(() => {
       let tl = gsap.timeline();
       tl.from(".Impact-Image", {
-        duration: 1,
-        x: 100,
+        duration: 2,
+        x: 50,
+        display: "none",
         delay: 0.1,
         opacity: 0,
         scrollTrigger: {
@@ -118,8 +120,8 @@ function Workspace() {
               industry.Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </p>
-            <ul className=" list-image-tick mb-0">
-              <li className="features-text">
+            <ul className=" list-image-tick font-extralight mb-0">
+              <li className="features-text font-extralight">
                 A comfy workspace to birth your ideas
               </li>
               <li className="features-text">
@@ -135,6 +137,7 @@ function Workspace() {
         </div>
       </div>
       <ClientReview />
+      <Footer />
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import Footer from "../Components/Footer";
+
 function Singleroom() {
   return (
     <>
@@ -9,6 +11,7 @@ function Singleroom() {
           src={Slider}
         />
       </div>
+      <Footer />
     </>
   );
 }

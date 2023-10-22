@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url("https://fonts.googleapis.com/css2?family=Kadwa:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap");
 
 /* Animation */
 
@@ -12,11 +12,11 @@
   box-sizing: border-box;
 }
 .navbar-links {
-  @apply hover:border-0 after:content-[""] after:block after:w-0 after:h-[2px] after:bg-[#af734b] after:transition-[width] after:duration-300 after:hover:w-[100%];
+  @apply hover:border-0 after:content-[""] after:block after:w-0 after:h-[2px] after:bg-[#af734b] after:transition-[width] after:duration-300 after:hover:w-[100%] font-bold;
 }
 
 .centerhome-links {
-  @apply hover:text-[#af734b] no-underline flex items-center justify-center   text-[#d8976c] text-[24px] sm:text-sm p-[17px] sm:p-1 gap-[54px] sm:gap-2  font-light leading-normal;
+  @apply hover:text-[#af734b] no-underline flex items-center font-bold justify-center   text-[#d8976c] text-[24px] sm:text-sm p-[17px] sm:p-1 gap-[54px] sm:gap-2  font-light leading-normal;
 }
 
 /* Workspace */
@@ -30,10 +30,10 @@
   @apply sm:w-[100%] md:w-[100%] sm:relative md:relative md:z-0 md:text-center  sm:z-0 sm:text-center sm:h-[100%] md:h-[100%] sm:rounded-none md:rounded-none rounded-[14px] bg-black bg-opacity-75 inline-flex px-[40px] py-[81px] flex-col items-center justify-center w-auto h-[399px] box-border gap-[22px];
 }
 .hero-h2 {
-  @apply text-white font-[Kadwa] text-[90px] md:text-[50px] sm:text-[40px] m-0 font-normal font-bold leading-normal;
+  @apply text-white  font-[Kadwa] text-[90px] md:text-[50px] sm:text-[40px] m-0 font-bold leading-normal;
 }
 .hero-p {
-  @apply text-white text-center font-[Kadwa] text-[14px] font-normal font-bold leading-normal flex h-[106px] flex-col justify-center flex-shrink-0 m-0;
+  @apply text-white text-center font-[Kadwa] text-[14px] font-normal leading-normal flex h-[106px] flex-col justify-center flex-shrink-0 m-0;
 }
 .second {
   @apply flex py-10 flex-col gap-24;
@@ -48,7 +48,7 @@
   @apply flex flex-col items-start gap-1 w-[550px] md:w-[100%] sm:w-[100%];
 }
 .box-h3 {
-  @apply text-black font-[Kadwa] text-[35px] md:text-2xl sm:text-2xl;
+  @apply text-black font-[Kadwa] font-bold text-[35px] md:text-2xl sm:text-2xl;
 }
 
 .box-p {
