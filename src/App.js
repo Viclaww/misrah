@@ -7,6 +7,9 @@ import Eventhall from "./Pages/Eventhall";
 import Workspace from "./Pages/Workspace";
 import Guestroom from "./Pages/Guestroom";
 import WorkspaceBooking from "./Pages/Workspacebooking";
+import Singleroom from "./Pages/singleroom";
+import Doubleroom from "./Pages/doubleroom";
+
 function App() {
   return (
     <>
@@ -16,6 +19,8 @@ function App() {
         <Route path="eventhall" element={<Eventhall />} />
         <Route path="workspace" element={<Workspace />} />
         <Route path="/workspace/booking" element={<WorkspaceBooking />} />
+        <Route path="guestrooms/single" element={<Singleroom />} />
+        <Route path="guestrooms/double" element={<Doubleroom />} />
         <Route path="guestrooms" element={<Guestroom />} />
       </Routes>
     </>

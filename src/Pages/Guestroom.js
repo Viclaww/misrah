@@ -150,7 +150,7 @@ const Guestroom = () => {
         <Centerhero>
           <h2 className="CH-child hero-h2">Guest Room</h2>
           <button className="CH-child bg-[#D8976C] text-white  flex px-[16px] py-[15px] box-border justify-center items-center border-none">
-            Book Now
+            <a href="#book-rooms">Book Now</a>
           </button>
         </Centerhero>
       </div>
@@ -168,13 +168,17 @@ const Guestroom = () => {
               industry.Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
             </p>
-            <Link className="box-a">Book Now</Link>
+            <a href="#book-rooms" className="box-a">
+              Book Now
+            </a>
           </div>
         </div>
       </div>
       <div className="px-32 w-full  text-center  py-28 flex flex-col justify-center items-center">
-        <h3 className="head-text text-4xl sm:text-2xl pb-10">Our Best Rooms</h3>
-        <p className="head-text text-sm sm:text-xs opacity-60 mb-10 sm:w-[300px]">
+        <h3 className="head-text text-4xl sm:text-2xl font-bold pb-10">
+          Our Best Rooms
+        </h3>
+        <p className="head-text lg:w-2/3 text-sm sm:text-xs opacity-60 mb-10 sm:w-[300px]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.Lorem Ipsum is simply dummy text of the printing and
           typesetting industry.
@@ -184,9 +188,12 @@ const Guestroom = () => {
           alt="Rooms"
           src={bestroom}
         ></img>
-        <div className="text-left flex flex-row sm:flex-col justify-center items-center gap-14  w-[] ">
+        <div
+          id="book-rooms"
+          className="text-left flex flex-row sm:flex-col justify-center items-center gap-14  w-[] "
+        >
           <div className="singleroom shadow-lg p-3 ">
-            <Link>
+            <Link to="/guestrooms/single">
               <img
                 className="w-[290px] h-[278px] "
                 alt="singleroom"
@@ -204,7 +211,7 @@ const Guestroom = () => {
           </div>
 
           <div className="doubleroom shadow-lg p-3 ">
-            <Link>
+            <Link to="/guestrooms/double">
               <img
                 className="w-[290px] sm:w-[320px] h-[278px] "
                 alt="doubleroom"
