@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 .navbar-links {
-  @apply hover:border-0 after:content-[""] after:block after:w-0 after:h-[2px] after:bg-[#af734b] after:transition-[width] after:duration-300 after:hover:w-[100%] font-bold;
+  @apply hover:border-0 after:content-[""] after:block after:w-0 after:h-[2px] after:bg-[#af734b] after:transition-[width] after:duration-300 after:hover:w-[100%] sm:py-5 sm:bg-gray-500 sm:w-full sm:border sm:border-solid sm:border-gray-300 border-0 text-center font-bold;
 }
 
 .centerhome-links {
@@ -25,7 +25,7 @@
   background-image: url("./asset/workspace_hero.jpg");
 }
 .hero {
-  @apply bg-cover bg-no-repeat bg-center w-[98.6vw] h-[88vh] sm:h-[100vh] md:w-[100vw] md:h-[100vh] flex items-center justify-center;
+  @apply bg-cover bg-no-repeat bg-center w-[98.6vw] sm:w-full h-[88vh] sm:h-[100vh] md:w-[100vw] md:h-[100vh] flex items-center justify-center;
 }
 .centerhero {
   @apply sm:w-[100%] md:w-[100%] sm:relative md:relative md:z-0 md:text-center  sm:z-0 sm:text-center sm:h-[100%] md:h-[100%] sm:rounded-none md:rounded-none rounded-[14px] bg-black bg-opacity-75 inline-flex px-[40px] py-[81px] flex-col items-center justify-center w-auto h-[399px] box-border gap-[22px];

@@ -42,7 +42,7 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <div className=" navbar sm:block sm:absolute sm:z-10 w-full flex sm:flex-row  md:items-center md:flex-row  md:items-center justify-evenly sm:justify-between md:justify-between pt-1.5 pb-1.5  ">
+      <div className=" navbar sm:bg-gray-500 sm:block sm:absolute sm:z-10 w-full flex sm:flex-row  md:items-center md:flex-row  md:items-center justify-evenly sm:justify-between md:justify-between pt-1.5 pb-1.5  ">
         <NavLink to="/">
           <img
             className="w-[45px] h-[60px] sm:m-3 "

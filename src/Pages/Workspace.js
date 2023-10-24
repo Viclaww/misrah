@@ -7,6 +7,7 @@ import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ClientReview from "../Components/Clientreview";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 gsap.registerPlugin(ScrollTrigger);
 
 function Workspace() {
@@ -75,6 +76,7 @@ function Workspace() {
   }, []);
   return (
     <div className="workspace">
+      <Navbar />
       <div className="hero bg-workspace">
         <Centerhero>
           <h2 className="CH-child hero-h2">Co-Working Spaces</h2>

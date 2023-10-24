@@ -27,7 +27,7 @@ const RoomDesc = ({ price, capacity }) => {
           {" "}
           Breakfast Included
         </p>
-        <Link className="text-white font-bold bg-orange-400 py-2 px-2 ">
+        <Link className="text-white font-bold bg-orange-400 py-2 px-2 mb-10 ">
           Book Now
         </Link>
       </div>

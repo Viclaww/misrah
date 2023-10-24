@@ -4,6 +4,7 @@ import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 gsap.registerPlugin(ScrollTrigger);
 const WorkspaceBooking = () => {
   useEffect(() => {
@@ -108,6 +109,7 @@ const WorkspaceBooking = () => {
   }, []);
   return (
     <>
+      <Navbar />
       <div className="px-32 w-full  text-center  py-28 flex flex-col justify-center items-center">
         <h3 className="head-text text-center text-4xl sm:text-lg pb-10">
           Best Work Space To Birth Your Ideas

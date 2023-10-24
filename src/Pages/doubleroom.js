@@ -6,6 +6,7 @@ import single3 from "../asset/Rectangle 6 (5).png";
 import single4 from "../asset/Frame 10.png";
 import { X } from "lucide-react";
 import RoomDesc from "../Components/RoomDesc";
+import Navbar from "../Components/Navbar";
 
 const ImageModal = ({ imageSrc, onClose }) => {
   return (
@@ -43,6 +44,7 @@ function Doubleroom() {
 
   return (
     <>
+      <Navbar />
       <div className="px-32 w-full  text-center font-bold  py-28 flex flex-col justify-center items-center">
         <h3 className="head-text text-4xl sm:text-2xl pb-10">
           Double Bed Room

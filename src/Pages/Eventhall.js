@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import ClientReview from "../Components/Clientreview";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 gsap.registerPlugin(ScrollTrigger);
 
 const Eventhall = () => {
@@ -15,7 +16,7 @@ const Eventhall = () => {
       let tl = gsap.timeline();
       tl.from(".hall-img", {
         duration: 0.5,
-        x: 100,
+        x: 50,
         delay: 0.1,
         opacity: 0,
         scrollTrigger: {
@@ -74,6 +75,7 @@ const Eventhall = () => {
   }, []);
   return (
     <>
+      <Navbar />
       <div className="hero bg-eventhall">
         <Centerhero>
           <h2 className="CH-child hero-h2">Comfy Event Hall</h2>

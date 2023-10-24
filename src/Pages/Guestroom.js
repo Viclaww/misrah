@@ -9,6 +9,7 @@ import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 gsap.registerPlugin(ScrollTrigger);
 const Guestroom = () => {
   useEffect(() => {
@@ -145,7 +146,8 @@ const Guestroom = () => {
   }, []);
 
   return (
-    <div className="guestroom">
+    <>
+      <Navbar />
       <div className="hero bg-guestroom">
         <Centerhero>
           <h2 className="CH-child hero-h2">Guest Room</h2>
@@ -231,7 +233,7 @@ const Guestroom = () => {
       </div>
       <ClientReview />
       <Footer />
-    </div>
+    </>
   );
 };
 

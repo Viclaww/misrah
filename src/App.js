@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import "./style.css";
 import { Route, Routes } from "react-router-dom";
@@ -13,7 +12,6 @@ import Doubleroom from "./Pages/doubleroom";
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="eventhall" element={<Eventhall />} />
